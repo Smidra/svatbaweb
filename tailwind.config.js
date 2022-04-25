@@ -3,6 +3,10 @@ module.exports = {
     content: ['./*.html'],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
+        fontFamily: {
+            'sans': ['Noto Sans Display', 'sans-serif'],
+            'serif': ['Bodoni Moda', 'serif'],
+        },
         extend: {
             colors: {
                 //add your own color
