@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
-    content: ['./*.html'],
+    content: ['./src/*.html'],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         fontFamily: {
@@ -14,7 +14,7 @@ module.exports = {
             },
             container: {
                 center: true,
-            },
+            }
         },
     },
     variants: {
