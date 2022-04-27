@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <title>Tailwind Sandbox</title>
     <link rel=icon href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/assets/js/main.js"></script>
 </head>
 <body class="bg-gray-100">
-<div class="group p-6 mt-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-6 hover:bg-slate-50">
+<div class="transition-all group p-6 mt-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-6 hover:bg-slate-50">
     <div class="shrink-0">
         <img class="h-12 w-12" src="/favicon.svg" alt="Logo">
     </div>
-    <div>
-        <div class="text-2xl font-serif text-slate-600 group-hover:text-slate-700 group-hover:ml-0.5">ChitChat</div>
-        <p class="text-slate-500 font-light group-hover:ml-0.5">You have a new message!</p>
-        <button class="text-zinc-50 px-3 py-1 mt-2 rounded-md bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 group-hover:ml-0.5">
+    <div class="grow">
+        <div class="text-center sm:text-left text-3xl pb-1 font-serif text-slate-600 group-hover:text-slate-700 group-hover:ml-0.5 transition-all">ChitChat Ahoj</div>
+        <p class="text-slate-500 font-light group-hover:ml-0.5 transition-all">You have a new message!</p>
+        <button class="text-zinc-50 px-3 py-1 mt-2 rounded-md bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 group-hover:ml-0.5 transition-all">
             Save changes
         </button>
     </div>
@@ -38,8 +40,23 @@
     </details>
 </div>
 
-<!--NEXT TIME: responsiveness https://tailwindcss.com/docs/responsive-design-->
+<div class="mx-auto max-w-md bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all overflow-hidden md:max-w-2xl">
+    <div class="md:flex">
+        <div class="md:shrink-0">
+            <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://images.unsplash.com/photo-1650997062224-e1d14f5143ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="Man looking at item at a store">
+        </div>
+        <div class="p-8">
+            <div class="uppercase tracking-wide text-sm text-blue-500 font-semibold">Case study</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+            <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+        </div>
+    </div>
+</div>
 
-    <script type="module" src="/assets/js/main.js"></script>
+<div>
+    <button class="btn-primary">
+        jak se mas
+    </button>
+</div>
 </body>
 </html>
