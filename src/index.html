@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ráchel&Tony 3.9.2022</title>
+    <link rel=icon href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/assets/js/main.js"></script>
+
+</head>
+<body class="leading-normal tracking-normal">
+
+<!--Nav-->
+<nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="pl-4 flex items-center">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+                <img src="/assets/img/logo3.svg" class="h-14"/>
+            </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+            <button id="nav-toggle"
+                    class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+             id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                <li class="mr-3">
+                    <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                       href="#">link</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                       href="#">link</a>
+                </li>
+            </ul>
+            <button
+                    id="navAction"
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+                Action
+            </button>
+        </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
+</nav>
+
+
+<!--Hero-->
+<div class="pt-24">
+    <section style="background-image: url('/assets/img/dust_scratches.png')"
+             class="container w-full border-b mb-20 p-8 pb-0 rounded-2xl shadow-2xl border-b-4 border-b-blue-900"
+    >
+        <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center text-gray-900">
+            <!--Left Col-->
+            <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
+                <p class="uppercase tracking-loose w-full">Budeme se brát</p>
+                <h1 class="mt-12 text-5xl font-serif leading-tight w-full">
+                    Ráchel <span class="font-sans text-2xl font-light">Ridzoňová</span>
+                </h1>
+                <h1 class="text-5xl font-serif leading-tight w-full">
+                    Antonín <span class="font-sans text-2xl font-light">Šmíd</span>
+                </h1>
+                <h2 class="font-semibold text-2xl pt-10 w-full">
+                    3. září 2020 | 11.00 hodin
+                </h2>
+                <p class="leading-normal text-2xl font-light mt-12 mb-8">
+                    Evangelický kostel v&nbspČeských&nbspBudějovicích
+                </p>
+<!--                <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">-->
+<!--                    Subscribe-->
+<!--                </button>-->
+            </div>
+            <!--Right Col-->
+            <div class="w-full md:w-2/5 p-2 py-6 text-center">
+                <img class="w-full md:w-4/5 w-2/5 z-50 mx-auto" src="/assets/img/pandulaci.svg"/>
+            </div>
+        </div>
+<!--        <img class="w-full mx-auto" src="/assets/img/flowers-long.svg"/>-->
+    </section>
+
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+            <p class="uppercase tracking-loose w-full">What business are you?</p>
+            <h1 class="my-4 text-5xl font-bold leading-tight">
+                Main Hero Message to sell yourself!
+            </h1>
+            <p class="leading-normal text-2xl mb-8">
+                Sub-hero message, not too long and not too short. Make it just right!
+            </p>
+            <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                Subscribe
+            </button>
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-3/5 py-6 text-center">
+            <img class="w-full md:w-4/5 z-50" src="hero.png"/>
+        </div>
+    </div>
+</div>
+
+
+<section class="bg-white border-b py-8">
+    <div class="container max-w-5xl mx-auto m-8">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+            Title
+        </h1>
+    </div>
+</section>
+
+<section class="bg-white w-full container mx-auto pt-20">
+    content here
+
+    <p class="text-gray-800 mx-auto max-w-md">
+
+        Spicy jalapeno bacon ipsum dolor amet tri-tip meatloaf ribeye bacon. Prosciutto sausage meatball strip steak
+        tail pig turkey jowl meatloaf drumstick. Ham hock pork belly doner picanha beef kielbasa. Strip steak ham
+        landjaeger kevin pork pastrami. Spare ribs ham hock tongue ground round, rump hamburger frankfurter biltong
+        short loin leberkas shoulder boudin doner.
+
+        Tri-tip biltong chicken, pork belly pork chop shoulder cupim andouille flank rump picanha alcatra turducken
+        shankle short ribs. Boudin jerky buffalo short ribs kielbasa. Pork chop cow boudin, leberkas meatloaf beef ribs
+        kevin sausage short ribs. Chuck shankle burgdoggen, pork loin short ribs pig bresaola tenderloin. Prosciutto
+        ground round frankfurter capicola turkey rump meatball leberkas alcatra cupim tenderloin spare ribs ribeye.
+        Flank pig filet mignon brisket.
+
+        Swine tongue fatback pig, filet mignon bacon hamburger. Ball tip short ribs frankfurter biltong sausage brisket
+        pork jerky. Pancetta ground round fatback buffalo, shank strip steak pastrami capicola chicken porchetta kevin
+        bacon tenderloin ham boudin. Burgdoggen kielbasa boudin jowl brisket biltong shankle swine ribeye. Cupim
+        shoulder capicola landjaeger tail strip steak. Jerky bacon porchetta pancetta andouille, spare ribs buffalo
+        sirloin pig.
+
+        Andouille beef filet mignon pork chop ribeye. Leberkas pancetta buffalo salami jerky. Biltong pork belly
+        andouille brisket filet mignon tail boudin short ribs. Porchetta rump doner cow turducken turkey. Jerky spare
+        ribs ball tip landjaeger swine short loin kielbasa shoulder buffalo. Rump leberkas ham pork chop meatloaf.
+
+        Salami meatball turkey chuck frankfurter landjaeger tri-tip chislic shankle porchetta. Cow tongue picanha filet
+        mignon ribeye, pork loin chislic venison shankle drumstick. Swine pork loin ground round, corned beef biltong
+        venison rump leberkas. Kevin short ribs boudin chislic pork loin landjaeger biltong cow tail alcatra meatloaf
+        bacon ball tip porchetta. Burgdoggen pork chop pork belly cupim. Bresaola pig filet mignon chislic, boudin
+        landjaeger bacon ball tip pork loin pastrami pork chop prosciutto.
+
+        Spicy jalapeno bacon ipsum dolor amet tri-tip meatloaf ribeye bacon. Prosciutto sausage meatball strip steak
+        tail pig turkey jowl meatloaf drumstick. Ham hock pork belly doner picanha beef kielbasa. Strip steak ham
+        landjaeger kevin pork pastrami. Spare ribs ham hock tongue ground round, rump hamburger frankfurter biltong
+        short loin leberkas shoulder boudin doner.
+
+        Tri-tip biltong chicken, pork belly pork chop shoulder cupim andouille flank rump picanha alcatra turducken
+        shankle short ribs. Boudin jerky buffalo short ribs kielbasa. Pork chop cow boudin, leberkas meatloaf beef ribs
+        kevin sausage short ribs. Chuck shankle burgdoggen, pork loin short ribs pig bresaola tenderloin. Prosciutto
+        ground round frankfurter capicola turkey rump meatball leberkas alcatra cupim tenderloin spare ribs ribeye.
+        Flank pig filet mignon brisket.
+
+        Swine tongue fatback pig, filet mignon bacon hamburger. Ball tip short ribs frankfurter biltong sausage brisket
+        pork jerky. Pancetta ground round fatback buffalo, shank strip steak pastrami capicola chicken porchetta kevin
+        bacon tenderloin ham boudin. Burgdoggen kielbasa boudin jowl brisket biltong shankle swine ribeye. Cupim
+        shoulder capicola landjaeger tail strip steak. Jerky bacon porchetta pancetta andouille, spare ribs buffalo
+        sirloin pig.
+
+        Andouille beef filet mignon pork chop ribeye. Leberkas pancetta buffalo salami jerky. Biltong pork belly
+        andouille brisket filet mignon tail boudin short ribs. Porchetta rump doner cow turducken turkey. Jerky spare
+        ribs ball tip landjaeger swine short loin kielbasa shoulder buffalo. Rump leberkas ham pork chop meatloaf.
+
+        Salami meatball turkey chuck frankfurter landjaeger tri-tip chislic shankle porchetta. Cow tongue picanha filet
+        mignon ribeye, pork loin chislic venison shankle drumstick. Swine pork loin ground round, corned beef biltong
+        venison rump leberkas. Kevin short ribs boudin chislic pork loin landjaeger biltong cow tail alcatra meatloaf
+        bacon ball tip porchetta. Burgdoggen pork chop pork belly cupim. Bresaola pig filet mignon chislic, boudin
+        landjaeger bacon ball tip pork loin pastrami pork chop prosciutto.
+    </p>
+</section>
+
+</body>
+</html>
