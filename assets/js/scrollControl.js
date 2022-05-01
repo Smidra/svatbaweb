@@ -1,3 +1,5 @@
+import {throttle} from "./helperFns";
+
 var scrollpos = window.scrollY;
 var header = document.getElementById("header");
 var navcontent = document.getElementById("nav-content");
@@ -5,7 +7,10 @@ var navaction = document.getElementById("navAction");
 var brandname = document.getElementById("brandname");
 var toToggle = document.querySelectorAll(".toggleColour");
 
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", scrollHandler);
+var headerSet = false;
+
+function scrollHandler() {
     /*Apply classes for slide in bar*/
     scrollpos = window.scrollY;
 
@@ -14,15 +19,30 @@ document.addEventListener("scroll", function () {
     }
 
     if (scrollpos > 10) {
-        setHeaderMove();
+        if(!headerSet){
+            headerSet = true;
+            headerChangerThrottled(true);
+        }
     } else {
-        if(window.innerWidth > 1024){
-            unsetHeaderMove();
+        if(window.innerWidth > 1024 && headerSet){
+            headerSet = false;
+            headerChangerThrottled(false);
         }
     }
-});
+}
+
+var headerChangerThrottled = throttle(headerChanger, 500, {leading: true});
+
+function headerChanger(set) {
+    if(set){
+        setHeaderMove();
+    }else{
+        unsetHeaderMove();
+    }
+}
 
 export function setHeaderMove() {
+    headerSet = true;
     header.classList.add("bg-white");
     navaction.classList.remove("bg-white");
     navaction.classList.add("gradient");
@@ -39,6 +59,7 @@ export function setHeaderMove() {
 }
 
 export function unsetHeaderMove() {
+    headerSet = false;
     header.classList.remove("bg-white");
     navaction.classList.remove("gradient");
     navaction.classList.add("bg-white");

@@ -10,6 +10,10 @@ document.onclick = check;
 function check(e) {
     var target = (e && e.target) || (event && event.srcElement);
 
+    if(window.innerWidth > 1024){
+        return;
+    }
+
     //Nav Menu
     if (!checkParent(target, navMenuDiv)) {
         setHeaderMove();
