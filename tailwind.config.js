@@ -14,7 +14,13 @@ module.exports = {
             },
             container: {
                 center: true,
-            }
+                // padding: {
+                //     '2xl': '128px',
+                // }
+            },
+            screens: {
+                '2xl': '1280px',
+            },
         },
     },
     variants: {

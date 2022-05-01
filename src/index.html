@@ -6,13 +6,12 @@
     <link rel=icon href="/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="/assets/js/main.js"></script>
-
 </head>
 <body class="leading-normal tracking-normal">
 
 <!--Nav-->
 <nav id="header" class="fixed w-full z-30 top-0 text-white">
-    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 bg-white">
         <div class="pl-4 flex items-center">
             <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
                 <img src="/assets/img/logo3.svg" class="h-14"/>
@@ -30,23 +29,24 @@
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
              id="nav-content">
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                <li class="mr-3">
-                    <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+                <li class="mr-3 text-right">
+                    <a class="header-link-current" href="#">Událost</a>
                 </li>
-                <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                       href="#">link</a>
+                <li class="mr-3 text-right">
+                    <a class="header-link"
+                       href="#">Nevěsta & ženich</a>
                 </li>
-                <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                       href="#">link</a>
+                <li class="mr-3 text-right">
+                    <a class="header-link"
+                       href="#">Dary</a>
                 </li>
             </ul>
             <button
                     id="navAction"
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    style="float: right"
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded-full mt-4 lg:mt-0 py-3 px-8 opacity-80 focus:outline-none focus:shadow-outline transform transition duration-150 ease-in-out"
             >
-                Action
+                Určitě přijdu!
             </button>
         </div>
     </div>
@@ -55,9 +55,9 @@
 
 
 <!--Hero-->
-<div class="pt-24">
+<div class="lg:pt-24 pt-16 mb-24">
     <section style="background-image: url('/assets/img/dust_scratches.png')"
-             class="container w-full border-b mb-20 p-8 pb-0 rounded-2xl shadow-2xl border-b-4 border-b-blue-900"
+             class="container w-full border-b p-8 pb-0 rounded-2xl shadow-2xl border-b-4 border-b-blue-900"
     >
         <div class="px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center text-gray-900">
             <!--Left Col-->
@@ -75,38 +75,152 @@
                 <p class="leading-normal text-2xl font-light mt-12 mb-8">
                     Evangelický kostel v&nbspČeských&nbspBudějovicích
                 </p>
-<!--                <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">-->
-<!--                    Subscribe-->
-<!--                </button>-->
+                <!--                <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">-->
+                <!--                    Subscribe-->
+                <!--                </button>-->
             </div>
             <!--Right Col-->
-            <div class="w-full md:w-2/5 p-2 py-6 text-center">
-                <img class="w-full md:w-4/5 w-2/5 z-50 mx-auto" src="/assets/img/pandulaci.svg"/>
+            <div class="w-full md:w-2/5 px-4 pt-0 pb-6 text-center">
+                <div class="font-light text-sm pb-4">
+                    „Amen, amen, pravím vám: Kdo nevchází do ovčince dveřmi, ale přelézá ohradu, je zloděj a lupič."
+                    Jan&nbsp10,&nbsp1
+                </div>
+                <img class="w-full lg:w-3/5 md:w-4/5 w-2/5 z-20 mx-auto" src="/assets/img/pandulaci.svg"/>
             </div>
         </div>
-<!--        <img class="w-full mx-auto" src="/assets/img/flowers-long.svg"/>-->
+        <!--        <img class="w-full mx-auto" src="/assets/img/flowers-long.svg"/>-->
     </section>
+    <div class="w-full flex-grow flex items-center w-auto mt-8 overflow-x-scroll">
+        <ul class="list-reset flex justify-center flex-1 items-center">
+            <li class="mr-3">
+                <a class="header-link text-xl text-gray-600"
+                   href="#obrad">Obřad</a>
+            </li>
+            <li class="mr-3">
+                <a class="header-link text-xl text-gray-600"
+                   href="#program">Program&nbspdne</a>
+            </li>
+            <li class="mr-3">
+                <a class="header-link text-xl text-gray-600"
+                   href="#doprava">Doprava</a>
+            </li>
+            <li class="mr-3">
+                <a class="header-link text-xl text-gray-600"
+                   href="#ubytovani">Ubytování</a>
+            </li>
+        </ul>
 
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-        <!--Left Col-->
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-            <p class="uppercase tracking-loose w-full">What business are you?</p>
-            <h1 class="my-4 text-5xl font-bold leading-tight">
-                Main Hero Message to sell yourself!
-            </h1>
-            <p class="leading-normal text-2xl mb-8">
-                Sub-hero message, not too long and not too short. Make it just right!
-            </p>
-            <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Subscribe
-            </button>
-        </div>
-        <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center">
-            <img class="w-full md:w-4/5 z-50" src="hero.png"/>
-        </div>
     </div>
 </div>
+
+
+<section>
+    <div id="obrad" class="section-anchor"></div>
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row-reverse items-center">
+        <div class="w-full md:w-2/5 items-start text-center md:text-left text-pink-900">
+            <h1 class="my-4 mt-0 text-5xl font-bold leading-tight">
+                Svatební bohoslužby
+            </h1>
+        </div>
+        <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-right md:pr-12">
+            <p class="uppercase tracking-loose w-full pb-6">Obřad v kostele</p>
+            <p class="leading-normal text-2xl mb-8 text-gray-700">
+                Spicy jalapeno bacon ipsum dolor amet beef filet mignon frankfurter rump, corned beef chuck sirloin.
+                Sausage turducken pork chop cupim jowl beef ribs strip steak biltong bresaola andouille t-bone sirloin
+                ribeye swine. Picanha cupim venison tenderloin andouille, buffalo shoulder. Ham hock tail boudin
+                pastrami brisket, flank fatback.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="container w-full text-center py-16">
+    <span class="flower text-transparent bg-clip-text gradient opacity-70">svatba</span>
+    <!--    <div class="w-full mb-4">-->
+    <!--        <div class="h-1 mx-auto gradient w-64 my-0 py-0 opacity-40 rounded-full"></div>-->
+    <!--    </div>-->
+</div>
+
+<section class="mt-8">
+    <div id="program" class="section-anchor"></div>
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div class="w-full md:w-2/5 items-start text-center md:text-right text-blue-900">
+            <h1 class="my-4 text-5xl font-bold leading-tight">
+                Program dne
+            </h1>
+        </div>
+        <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
+            <table class="w-full lg:ml-8 table-auto text-slate-600 text-xl text-left">
+                <tbody>
+                <tr>
+                    <td class="font-bold w-20">
+                        11:00
+                    </td>
+                    <td>
+                        Bohoslužby a obřad
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20">
+
+                    </td>
+                    <td>
+                        Společná fotografie
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20">
+
+                    </td>
+                    <td>
+                        Přípitek a proslovy
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20">
+
+                    </td>
+                    <td>
+                        Oběd na zahradě
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20 pt-4">
+                        14:00
+                    </td>
+                    <td class=" pt-4">
+                        Zakrojení dortů
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20 pt-4">
+                        15:00
+                    </td>
+                    <td class="pt-4">
+                        Divadlo Drak'n'Roses
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20 pt-4">
+                        17:00
+                    </td>
+                    <td class="pt-4">
+                        Prohlídka Budějovic / Hra po starém městě
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-bold w-20 pt-4">
+                        20:00
+                    </td>
+                    <td class="pt-4">
+                        Svíták Jam Session 📘&nbsp🎵&nbsp🎷&nbsp🎸&nbsp🎹
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
 
 <section class="bg-white border-b py-8">
@@ -180,3 +294,9 @@
 
 </body>
 </html>
+
+<!--
+TODO:
+- mobile menu
+- mobile prehodit poradi?
+-->
