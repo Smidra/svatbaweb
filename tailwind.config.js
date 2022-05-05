@@ -19,7 +19,8 @@ module.exports = {
                 // }
             },
             screens: {
-                '2xl': '1280px',
+                'xl': '1441px',
+                '2xl': '1441px',
             },
         },
     },
