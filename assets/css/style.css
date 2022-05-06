@@ -50,5 +50,18 @@ body {
   .section-anchor {
     position: relative; top: -96px; height: 0; width: 0;
   }
+
+  .checkbox {
+    @apply
+    rounded
+    border-gray-300
+    text-blue-600
+    shadow-sm
+    focus:border-blue-300
+    focus:ring
+    focus:ring-offset-0
+    focus:ring-blue-200
+    focus:ring-opacity-50
+  }
 }
 

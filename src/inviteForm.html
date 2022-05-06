@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Ráchel&Tony 3.9.2022</title>
+    <link rel=icon href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script type="module" src="/assets/js/inviteFormPage.js"></script>
+</head>
+<body class="leading-normal tracking-normal">
+
+<!--Nav-->
+<nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 bg-white">
+        <div class="pl-4 flex items-center">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+               href="index.html">
+                <img src="/assets/img/logo3.svg" class="h-14"/>
+            </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+            <button id="nav-toggle"
+                    class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+             id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                <li class="mr-3 text-right">
+                    <a class="header-link" href="index.html">Událost</a>
+                </li>
+                <li class="mr-3 text-right">
+                    <a class="header-link"
+                       href="#">Nevěsta & ženich</a>
+                </li>
+                <li class="mr-3 text-right">
+                    <a class="header-link"
+                       href="#">Dary</a>
+                </li>
+            </ul>
+            <button
+                    style="float: right"
+                    class="mx-auto lg:mx-0 underline bg-white text-blue-800 font-bold rounded mt-4 lg:mt-0 py-2 px-5 focus:outline-none focus:shadow-outline transform transition duration-150 ease-in-out underline-offset-2"
+            >
+                Určitě přijdu!
+            </button>
+        </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
+</nav>
+
+<div class="flex flex-col h-screen justify-between">
+    <main class="mb-auto">
+        <section id="inviteForm" class="container lg:pt-28 pt-18">
+            <div class="container w-full px-3 mx-auto flex flex-wrap flex-col md:flex-row">
+                <div class="w-full md:w-2/5 items-start md:text-right text-pink-800 lg:px-6 pt-16">
+                    <h1 class="my-4 mt-0 mb-8 text-5xl font-bold leading-tight md:mt-0 mt-10">
+                        Počítejte se mnou.
+                    </h1>
+                    <div class="mt-6 mb-6 text-md font-light text-slate-600 border-t-2 pt-2">
+                        Cupim jowl beef ribs strip steak biltong bresaola andouille t-bone sirloin
+                        ribeye swine. Picanha cupim venison tenderloin andouille, buffalo shoulder. Ham hock tail boudin
+                        pastrami brisket, flank fatback.
+                    </div>
+                </div>
+                <div class="flex flex-col max-w-xl md:w-3/5 justify-center items-start lg:pl-12 lg: lg:pr-1">
+                    <div id="regForm" class="w-full grid grid-cols-1 gap-6">
+                        <label class="block">
+                            <span class="text-gray-700">Jméno</span>
+                            <input id="name" type="text" class="
+                    mt-1
+                    block
+                    w-full
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  " placeholder="">
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-700">Kontakt - email nebo telefon</span>
+                            <input id="contact" type="text" class="
+                    mt-1
+                    block
+                    w-full
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  " placeholder="adam@vraji.cz">
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-700">Kolik nás bude</span>
+                            <input id="count" type="number" class="
+                    mt-1
+                    block
+                    w-full
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  " placeholder="42">
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-700">Kolik s sebou vezmu dětí</span>
+                            <input id="countChildren" type="number" class="
+                    mt-1
+                    block
+                    w-full
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  " placeholder="12">
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-700">Jak dlouho se zdržíme</span>
+                            <select id="howLongWeStay" class="
+                    block
+                    w-full
+                    mt-1
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  ">
+                                <option disabled selected value style="display:none"></option>
+                                <option>Den i noc! Plánuji zůstat až do neděle</option>
+                                <option>Přijdu jenom na obřad</option>
+                                <option>Přijdu na obřad a zdržím se na oběd</option>
+                                <option>Přijdu na obřad a k večeru pojedu domů</option>
+                                <option>Přijdu až během odpoledne a zdržím se do večera</option>
+                            </select>
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-700">Ubytování</span>
+                            <select id="accommodation" class="
+                    block
+                    w-full
+                    mt-1
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  ">
+                                <option disabled selected value style="display:none"></option>
+                                <option>Nepotřebuji</option>
+                                <option>Spím ve stanu na zahradě</option>
+                                <option>Beru spacák a karimarku, spím ve sborových prostorech</option>
+                                <option>Rád bych spal v hotelu, kontaktujte mě</option>
+                            </select>
+                        </label>
+                        <fieldset class="block">
+                            <legend class="text-gray-700">Rád vám nas svatbě pomůžu</legend>
+                            <div class="mt-2">
+                                <div class="mb-2">
+                                    <label class="inline-flex items-center">
+                                        <input id="help-sweet" class="checkbox" type="checkbox">
+                                        <div>
+                                            <div class="ml-2">Přinesu něco sladkého</div>
+                                            <div class="text-xs font-light text-gray-600 ml-2">
+                                                Ribs strip steak biltong bresaola andouille t-bone
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="inline-flex items-center">
+                                        <input id="help-notsweet" class="checkbox" type="checkbox">
+                                        <div>
+                                            <div class="ml-2">Přinesu něco slaného</div>
+                                            <div class="text-xs font-light text-gray-600 ml-2">
+                                                Ribs strip steak biltong bresaola andouille
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="inline-flex items-center">
+                                        <input id="help-muscles" class="checkbox" type="checkbox">
+                                        <div>
+                                            <div class="ml-2">Pomůžu s čímkoliv, mám dvě ruce a nebojím se je použít
+                                            </div>
+                                            <div class="text-xs font-light text-gray-600 ml-2">
+                                                Ribs strip steak biltong bresaola andouille
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="inline-flex items-center">
+                                        <input id="help-program" class="checkbox" type="checkbox">
+                                        <div>
+                                            <div class="ml-2">Připravím program / hru / písničku</div>
+                                            <div class="text-xs font-light text-gray-600 ml-2">
+                                                Ribs strip steak biltong bresaola andouille
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <label class="block">
+                            <span class="text-gray-700">Ještě bych chtěl napsat ...</span>
+                            <textarea id="comment" class="
+                    mt-1
+                    block
+                    w-full
+                    rounded-md
+                    border-gray-300
+                    shadow-sm
+                    focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50
+                  " rows="3"></textarea>
+                        </label>
+                        <button
+                                id="submitFormBtn"
+                                class="bg-blue-700 text-white w-32 shadow-lg mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded py-2 px-5 underline-offset-2"
+                        >
+                            Odeslat
+                        </button>
+                    </div>
+                    <div id="result" class="mt-6 mb-6 text-xl font-bold text-blue-800 border-l-4 pl-4 pt-2 py-8 hidden">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container w-full text-center py-16 mt-12">
+            <span class="flower text-transparent bg-clip-text gradient opacity-70">konec stranky</span>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="w-full bg-blue-900 h-64 mt-18 bg-repeat shadow-3xl border-t-8 border-blue-500"
+             style="background-image: url('/assets/img/45degreee_fabric_dark_blue.bmp')">
+            <div class="container flex items-center flex-col">
+                <div class="font-serif text-3xl text-white mt-20 mb-10 mx-3 text-center">
+                    Moc se těšíme, že s námi přijdete slavit. r&t
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+</body>
+</html>
