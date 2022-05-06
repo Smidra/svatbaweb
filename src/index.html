@@ -44,7 +44,7 @@
             <button
                     id="navAction"
                     style="float: right"
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded mt-4 lg:mt-0 py-2 px-5 opacity-80 focus:outline-none focus:shadow-outline transform transition duration-150 ease-in-out"
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded mt-4 lg:mt-0 py-2 px-5 opacity-80 focus:outline-none focus:shadow-outline transform transition duration-150 ease-in-out underline-offset-2"
             >
                 Určitě přijdu!
             </button>
@@ -250,21 +250,39 @@
     <div id="lokace" class="section-anchor"></div>
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start md:pr-12">
-            <div class="h-96 w-full bg-cover bg-center rounded shadow-xl" style="background-image: url('/assets/img/map-5a.jpg')"></div>
+            <div class="h-96 w-full bg-cover bg-center rounded shadow-xl opacity-95" style="background-image: url('/assets/img/map-10a.jpg')"></div>
         </div>
-        <div class="w-full md:w-3/5 items-start text-center md:text-left text-blue-800 md:px-6">
-            <h1 class="my-4 mt-0 text-5xl font-bold leading-tight">
+        <div class="w-full md:w-3/5 items-start md:text-left text-blue-800 md:px-6">
+            <h1 class="my-4 mt-0 mb-8 text-5xl font-bold leading-tight md:mt-0 mt-10">
                Lokace
             </h1>
-            <p class="leading-normal text-2xl mb-4 text-gray-600">
+            <p class="leading-normal text-2xl mb-4 text-gray-600 mb-1">
                 Evangelický kostel, 28.října 28, České Budějovice
             </p>
             <a href="https://en.mapy.cz/zakladni?x=14.4727989&y=48.9809526&z=16&source=base&id=2072537" target="_blank">
-                <span class="text-xl hover:underline pr-4">Mapy.cz</span>
+                <span class="text-xl hover:underline underline-offset-2 pr-4">Mapy.cz</span>
             </a>
             <a href="https://goo.gl/maps/wUEAQE6Lz5DSYaoe9" target="_blank">
-                <span class="text-xl hover:underline pr-4">Google Mapy</span>
+                <span class="text-xl hover:underline underline-offset-2 pr-4">Google Mapy</span>
             </a>
+            <div class="mt-10">
+                <div class="flex flex-row md:flex-row flex-row-reverse border-b-2 text-lg">
+                    <div id="doprava-vlak" class="px-2 cursor-pointer">
+                        Vlakem
+                    </div>
+                    <div id="doprava-auto" class="px-2 opacity-60 cursor-pointer">
+                        Autem
+                    </div>
+                </div>
+                <div id="doprava-content" class="text-gray-600 mt-2">
+                    <div id="doprava-content-vlak" >
+                        Vlako navod: Spicy jalapeno bacon ipsum dolor amet tri-tip meatloaf ribeye bacon. Prosciutto sausage meatball strip steak tail pig turkey jowl meatloaf drumstick. Ham hock pork belly doner picanha beef kielbasa.
+                    </div>
+                    <div id="doprava-content-auto" style="display: none">
+                        Auto navod: Spicy jalapeno bacon ipsum dolor amet tri-tip meatloaf ribeye bacon. Prosciutto sausage meatball strip steak tail pig turkey jowl meatloaf drumstick. Ham hock pork belly doner picanha beef kielbasa.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -349,5 +367,6 @@ TODO:
 - mobile prehodit poradi? DONE
 - jmena jako na oznameni DONE
 - vic svetlejsi sytejsi modra
+- min ruzova mapa
 
 -->
