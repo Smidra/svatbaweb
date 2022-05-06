@@ -2,7 +2,7 @@ const { resolve } = require('path')
 export default {
     plugins: [],
     server: {
-        open: '/src/sandbox.html',
+        open: '/src/index.html',
         port: 3116,
     },
     build: {
