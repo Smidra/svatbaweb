@@ -26,6 +26,8 @@ async function createRegistration(){
     newReg.set('help', help);
     newReg.set('comment', document.getElementById('comment').value);
     newReg.set('contact', document.getElementById('contact').value);
+    newReg.set('phone', document.getElementById('phone').value);
+
 
 
     document.getElementById('result').innerText = 'Odesílám...';

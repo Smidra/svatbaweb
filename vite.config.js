@@ -1,4 +1,5 @@
 const { resolve } = require('path')
+
 export default {
     plugins: [],
     server: {
@@ -8,9 +9,8 @@ export default {
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                sandbox: resolve(__dirname, '/src/sandbox.html'),
-                another: resolve(__dirname, 'another.html')
+                main: resolve(__dirname, '/src/index.html'),
+                inviteForm: resolve(__dirname, '/src/inviteForm.html'),
             }
         }
     }
