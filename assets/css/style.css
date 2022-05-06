@@ -43,7 +43,12 @@ body {
     @apply bg-gradient-to-r from-blue-800 to-pink-800;
   }
 
+  .gradient-light {
+    @apply bg-gradient-to-r from-blue-600 to-pink-600;
+  }
+
   .section-anchor {
     position: relative; top: -96px; height: 0; width: 0;
   }
 }
+
