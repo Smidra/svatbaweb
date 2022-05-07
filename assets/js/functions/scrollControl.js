@@ -55,7 +55,6 @@ export function setHeaderMove() {
     }
     header.classList.add("shadow");
     navcontent.classList.remove("bg-gray-100");
-    navcontent.classList.add("bg-white");
 }
 
 export function unsetHeaderMove() {
@@ -72,6 +71,5 @@ export function unsetHeaderMove() {
     }
 
     header.classList.remove("shadow");
-    navcontent.classList.remove("bg-white");
     navcontent.classList.add("bg-gray-100");
 }

@@ -5,15 +5,18 @@
     <title>Ráchel&Tony 3.9.2022</title>
     <link rel=icon href="/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="/assets/js/mainPage.js"></script>
+    <script type="module" src="/assets/js/pages/main.js"></script>
 </head>
 <body class="leading-normal tracking-normal">
 
 <!--Nav-->
-<nav id="header" class="fixed w-full z-30 top-0 text-white">
+<nav id="header" class="fixed w-full z-30 top-0 bg-white text-white">
+    <div class="shadow hidden">
+
+    </div>
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 bg-white">
         <div class="pl-4 flex items-center">
-            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            <a href="./index.html" class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
                 <img src="/assets/img/logo3.svg" class="h-14"/>
             </a>
         </div>
@@ -34,11 +37,11 @@
                 </li>
                 <li class="mr-3 text-right">
                     <a class="header-link"
-                       href="#">Nevěsta & ženich</a>
+                       href="./aboutUs.html">Nevěsta & ženich</a>
                 </li>
                 <li class="mr-3 text-right">
                     <a class="header-link"
-                       href="#">Dary</a>
+                       href="./gifts.html">Dary</a>
                 </li>
             </ul>
             <a href="./inviteForm.html">
@@ -94,8 +97,9 @@
         </div>
         <!--        <img class="w-full mx-auto" src="/assets/img/flowers-long.svg"/>-->
     </section>
-    <div class="w-full flex-grow flex items-center w-auto mt-8 overflow-x-scroll">
-        <ul class="list-reset flex justify-center flex-1 items-center sm:flex-row flex-col">
+    <div class="w-full flex-grow flex justify-center text-center w-auto mt-8 ">
+<!--        <ul class="list-reset flex justify-center flex-1 items-center sm:flex-row flex-wrap">-->
+        <ul class="grid grid-cols-2 list-reset sm:flex sm:justify-center sm:flex-1 sm:items-center sm:flex-row sm:flex-wrap">
             <li class="md:mr-3">
                 <a class="header-link text-xl text-gray-600"
                    href="#obrad">Obřad</a>
@@ -353,11 +357,11 @@
     <div class="w-full bg-blue-900 h-80 mt-18 bg-repeat shadow-3xl border-t-8 border-blue-500" style="background-image: url('/assets/img/45degreee_fabric_dark_blue.bmp')">
         <div class="container flex items-center flex-col">
             <div class="font-serif text-3xl text-white mt-20 mb-10 mx-3 text-center">
-                Moc se těšíme, že s námi přijdete slavit. r&t
+                Moc se těšíme, že s námi přijdete slavit. R&T
             </div>
             <a href="./inviteForm.html">
                 <button
-                        class="gradient-light opacity-75 text-white shadow-lg mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded py-2 px-5 underline-offset-2"
+                        class="gradient-light opacity-75 text-white shadow-lg mx-auto lg:mx-0 hover:underline font-bold rounded py-2 px-5 underline-offset-2"
                 >
                     Mám to v plánu
                 </button>

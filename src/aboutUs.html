@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <title>Ráchel&Tony - o nás</title>
+    <link rel=icon href="/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/assets/js/pages/aboutUs.js"></script>
+</head>
+<body class="leading-normal tracking-normal">
+
+<!--Nav-->
+<nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 bg-white">
+        <div class="pl-4 flex items-center">
+            <a href="./index.html" class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+                <img src="/assets/img/logo3.svg" class="h-14"/>
+            </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+            <button id="nav-toggle"
+                    class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+             id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                <li class="mr-3 text-right">
+                    <a class="header-link" href="./index.html">Událost</a>
+                </li>
+                <li class="mr-3 text-right">
+                    <a class="header-link-current"
+                       href="#">Nevěsta & ženich</a>
+                </li>
+                <li class="mr-3 text-right">
+                    <a class="header-link"
+                       href="./gifts.html">Dary</a>
+                </li>
+            </ul>
+            <a href="./inviteForm.html">
+                <button
+                        id="navAction"
+                        style="float: right"
+                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded mt-4 lg:mt-0 py-2 px-5 opacity-80 focus:outline-none focus:shadow-outline transform transition duration-150 ease-in-out underline-offset-2"
+                >
+                    Určitě přijdu!
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
+</nav>
+
+
+<section class="container pt-24 xl:max-w-7xl md:mb-0">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col items-center">
+        <div class="w-full md:w-1/2 text-blue-800 flex flex-col justify-center">
+            <h1 class="my-4 mb-0 text-3xl font-bold leading-tight">
+                Naše první fotka
+            </h1>
+            <h1 class="my-4 mt-1  text-2xl font-bold leading-tight text-slate-400">
+                červenec 2008, Běleč nad Orlicí
+            </h1>
+
+        </div>
+        <div class="w-full md:w-1/2">
+            <div class="h-80 w-full bg-cover bg-right rounded shadow-xl md:saturate-50 md:brightness-110 hover:shadow-2xl hover:saturate-100 hover:-translate-y-0.5 transition-all" style="background-image: url('/assets/img/aboutUs/běleč2008.jpg')">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container md:mb-0 mb-8">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-stretch mt-8 md:mt-0">
+        <div class="w-full md:w-1/2 md:text-right text-blue-800 md:border-r-4 border-slate-200 flex flex-col justify-center">
+            <h1 class="my-4 mb-0 text-2xl font-bold leading-tight md:px-8 text-slate-400">
+                říjen 2015
+            </h1>
+            <div class="hidden md:flex" style="position: relative; height: 0; width: 100%;">
+                <div class="bg-slate-200 rounded-full" style="position: absolute; right: calc(-0.75rem - 2px); top: -1.7rem; width: 1.5rem; height: 1.5rem;">
+
+                </div>
+            </div>
+            <h1 class="my-4 mt-1 text-3xl font-bold leading-tight md:px-8">
+                Na sjezdu mládeže
+            </h1>
+        </div>
+        <div class="w-full md:w-1/2 md:pl-8 md:py-6 md:pt-12">
+            <div class="h-80 w-full bg-cover bg-center rounded shadow-xl md:saturate-50 md:brightness-110 hover:shadow-2xl hover:saturate-100 hover:-translate-y-0.5 transition-all" style="background-image: url('/assets/img/aboutUs/kavarna-sjezd.jpg')">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container xl:max-w-7xl">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row-reverse items-stretch">
+        <div class="w-full md:w-1/2 md:pr-8 md:py-6 flex flex-col justify-center ext-center text-blue-800">
+            <h1 class="my-4 mb-0 text-2xl font-bold leading-tight md:px-8 text-slate-400">
+                duben 2017
+            </h1>
+            <div class="hidden md:flex" style="position: relative; height: 0; width: 100%;">
+                <div class="bg-slate-200 rounded-full" style="position: absolute; left: calc(-0.75rem - 2px); top: -1.7rem; width: 1.5rem; height: 1.5rem;">
+                </div>
+            </div>
+            <h1 class="my-4 mt-1 text-3xl font-bold leading-tight md:px-8">
+                Kappa #1
+            </h1>
+            <div class="md:px-8 font-light text-slate-500">
+                Kappáci jsou husťáci.
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 md:pr-8 md:py-6 t md:border-r-4 border-slate-200 ">
+            <div class="h-80 w-full bg-cover bg-center rounded shadow-xl md:saturate-50 md:brightness-110 hover:shadow-2xl hover:saturate-100 hover:-translate-y-0.5 transition-all" style="background-image: url('/assets/img/aboutUs/kappa1.jpg')">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container md:mb-0 mb-8">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-stretch mt-8 md:mt-0">
+        <div class="w-full md:w-1/2 md:text-right text-blue-800 md:border-r-4 border-slate-200 flex flex-col justify-center">
+            <h1 class="my-4 mb-0 text-2xl font-bold leading-tight md:px-8 text-slate-400">
+                říjen 2021
+            </h1>
+            <div class="hidden md:flex" style="position: relative; height: 0; width: 100%;">
+                <div class="bg-slate-200 rounded-full" style="position: absolute; right: calc(-0.75rem - 2px); top: -1.7rem; width: 1.5rem; height: 1.5rem;">
+
+                </div>
+            </div>
+            <h1 class="my-4 mt-1 text-3xl font-bold leading-tight md:px-8">
+                💍
+            </h1>
+        </div>
+        <div class="w-full md:w-1/2 md:pl-8 md:py-6 md:pt-12 md:mb-8">
+            <div style="background-image: url('/assets/img/aboutUs/ano.JPG')" class="h-80 max-w-full md:w-72 bg-cover bg-no-repeat bg-center rounded shadow-xl md:saturate-50 md:brightness-110 hover:shadow-2xl hover:saturate-100 hover:-translate-y-0.5 transition-all" >
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container xl:max-w-7xl">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row-reverse items-stretch">
+        <div class="w-full md:w-1/2 md:pr-8 md:py-6 flex flex-col justify-center ext-center text-blue-800">
+            <h1 class="my-4 md:mb-24 text-2xl font-bold leading-tight md:px-8 text-slate-400">
+                září 2022
+            </h1>
+            <div class="hidden md:flex" style="position: relative; height: 0; width: 100%;">
+                <div class="bg-slate-200 rounded-full" style="position: absolute; left: calc(-0.75rem - 2px); top: -7.5rem; width: 1.5rem; height: 1.5rem;">
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 md:pr-8 md:py-6 md:pb-28 md:border-r-4 border-slate-200 border-dotted">
+            <div class="h-80 w-80 md:float-right mx-auto md:mb-0 mb-12 bg-contain bg-no-repeat bg-center rounded border-8 shadow-xl md:saturate-50 md:brightness-110 hover:shadow-2xl hover:saturate-100 hover:-translate-y-0.5 transition-all" style="background-image: url('/assets/img/pandulaci.svg')">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="">
+    <div class="w-full bg-blue-900 h-80 mt-18 bg-repeat shadow-3xl border-t-8 border-blue-500" style="background-image: url('/assets/img/45degreee_fabric_dark_blue.bmp')">
+        <div class="container flex items-center flex-col">
+            <div class="font-serif text-3xl text-white mt-20 mb-10 mx-3 text-center">
+                Moc se těšíme, že s námi přijdete slavit. R&T
+            </div>
+            <a href="./inviteForm.html">
+                <button
+                        class="gradient-light opacity-75 text-white shadow-lg mx-auto lg:mx-0 hover:underline font-bold rounded py-2 px-5 underline-offset-2"
+                >
+                    Mám to v plánu
+                </button>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
