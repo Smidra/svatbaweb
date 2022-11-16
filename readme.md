@@ -1,4 +1,4 @@
-# CI/CD pipeline for brther's wedding web.
+# CI/CD pipeline for brother's wedding web.
 rachelatony.cz
 
 # Tailwind CSS Boilerplate
