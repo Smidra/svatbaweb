@@ -1,3 +1,6 @@
+# CI/CD pipeline for brther's wedding web.
+rachelatony.cz
+
 # Tailwind CSS Boilerplate
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8dbea3dc-da9d-4524-ba9f-aad17785f152/deploy-status)](https://app.netlify.com/sites/tailwind-css-boilerplate/deploys)
